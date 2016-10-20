@@ -1,0 +1,7 @@
+cupp (0.0+20160624.git07f9b8-1) unstable; urgency=medium
+
+  * Initial release (Closes: #838541)
+  * debian/watch: added a fake site to explain about the current
+    status of the original upstream homepage.
+
+ -- Marcio de Souza Oliveira <m.desouza20@gmail.com>  Thu, 22 Sep 2016 17:03:16 +0000

@@ -1,0 +1,55 @@
+Source: cupp
+Section: misc
+Priority: optional
+Maintainer: Marcio de Souza Oliveira <m.desouza20@gmail.com>
+Build-Depends: debhelper (>= 10), python, python3, dh-python
+Standards-Version: 3.9.8
+Homepage: https://github.com/Mebus/cupp
+Vcs-Git: https://github.com/marciosouza20/cupp.git
+Vcs-Browser: https://github.com/marciosouza20/cupp.git
+
+Package: cupp
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${python:Depends}
+Conflicts: cupp3
+Description: generate dictionaries for attacks from personal data
+ CUPP (Common User Passwords Profiler) is a wordlist generator tool that
+ can generate wordlists from information such as a birthday, nickname,
+ address, name of a pet or relative, or a common word such as God, love,
+ money or password.
+ .
+ A weak password might be very short or only use alphanumeric characters,
+ making decryption simple. A weak password can also be one that is easily
+ guessed by someone profiling the user, such as a birthday, nickname,
+ address, name of a pet or relative, or a common word such as God, love,
+ money or password. From a social engineering you can obtain information
+ to use with the CUPP, this way the tool can create a very effective
+ dictionary for brute force attacks or dictionary attacks.
+ .
+ That is why CUPP has born, and it can be used in situations like security
+ penetration tests or forensic crime investigations.
+ .
+ This package install cupp that uses python2.
+
+Package: cupp3
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${python3:Depends}
+Conflicts: cupp
+Description: generate dictionaries for attacks from personal data version for python3
+ CUPP (Common User Passwords Profiler) is a wordlist generator tool that
+ can generate wordlists from information such as a birthday, nickname,
+ address, name of a pet or relative, or a common word such as God, love,
+ money or password.
+ .
+ A weak password might be very short or only use alphanumeric characters,
+ making decryption simple. A weak password can also be one that is easily
+ guessed by someone profiling the user, such as a birthday, nickname,
+ address, name of a pet or relative, or a common word such as God, love,
+ money or password. From a social engineering you can obtain information
+ to use with the CUPP, this way the tool can create a very effective
+ dictionary for brute force attacks or dictionary attacks.
+ .
+ That is why CUPP has born, and it can be used in situations like security
+ penetration tests or forensic crime investigations.
+ .
+ This package install cupp that uses python3.

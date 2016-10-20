@@ -1,0 +1,37 @@
+Description: Fixed the file cupp.cfg location and fixed
+             the hashbang of cupp3.py.
+Author: Marcio de Souza Oliveira <m.desouza20@gmail.com>
+Last-Update: 2016-09-22
+
+Index: cupp-0.0+20160624.git07f9b8/cupp.py
+===================================================================
+--- cupp-0.0+20160624.git07f9b8.orig/cupp.py
++++ cupp-0.0+20160624.git07f9b8/cupp.py
+@@ -45,7 +45,7 @@ import csv
+ 
+ # Reading configuration file...
+ config = ConfigParser.ConfigParser()
+-config.read('cupp.cfg')
++config.read('/etc/cupp.cfg')
+ 
+ years = config.get('years', 'years').split(',')
+ chars = config.get('specialchars', 'chars').split(',')
+Index: cupp-0.0+20160624.git07f9b8/cupp3.py
+===================================================================
+--- cupp-0.0+20160624.git07f9b8.orig/cupp3.py
++++ cupp-0.0+20160624.git07f9b8/cupp3.py
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python3
++#!/usr/bin/python3
+ #
+ #  Muris Kurgas aka j0rgan
+ #  j0rgan [at] remote-exploit [dot] org
+@@ -96,7 +96,7 @@ def version():
+     sys.exit()
+ 
+ 
+-def read_config(filename='cupp.cfg'):
++def read_config(filename='/etc/cupp.cfg'):
+     """Read the given configuration file and update global variables to reflect
+     changes (CONFIG, FTP_CONFIG, LEET_CONFIG)."""
+     #global CONFIG, FTP_CONFIG, LEET_CONFIG
